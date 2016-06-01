@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="perfectParallax">
+<head>
+  <meta charset="UTF-8">
+  <title>tarun k</title>
+  <link href='https://fonts.googleapis.com/css?family=Indie+Flower|Poiret+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../font-awesome-4.6.3/css/font-awesome.min.css">
+  <style>
+    body {
+       height:2000px;
+       margin: 0px;
+    }
+    .img {
+     background-size: cover;
+     background-repeat: no-repeat;
+     width: 100vw;
+     height: 100vh;
+     position: relative;
+    }
+    .arch {
+      background-image: url(https://placeimg.com/1080/640/arch);
+    }
+    .tech {
+      background-image: url(https://placeimg.com/1080/640/tech);
+    }
+    .nature {
+      background-image: url(https://placeimg.com/1080/640/nature);
+    }
+    .people {
+      background-image: url(https://placeimg.com/1080/640/people);
+    }
+    .txt {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      margin-bottom: calc(40vh - 100px);
+      text-align: center;
+      font-size: 72px;
+      font-family: 'Poiret One', cursive;
+      color: #ffffff;
+      i {
+        font-size: 9px;
+      }
+    }
+    .heading {
+      font-family: 'Indie Flower', cursive;
+      position: fixed;
+      top: 0px;
+      z-index: 9999;
+      width: 100%;
+      margin-top: 0px;
+      background: white;
+      padding: 10px;
+      font-size: 36px;
+      color: black!important;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <a class="heading" href="">tarun kondapalli</a>
+  <div>
+    <div class="img nature">
+      <p perfect-parallax parallax-ratio="1.0" parallax-css="bottom" parallax-init-val="100" class="txt">Hello there!</p>
+    </div>
+  </div>
+  <div>
+    <div class="img arch">
+      <p perfect-parallax parallax-ratio="1.0" parallax-css="bottom" parallax-init-val="-300" class="txt">Who am I ?</p>
+      <p perfect-parallax parallax-ratio="1.0" parallax-css="bottom" parallax-init-val="-700" class="txt" style="font-size: 35px; width: 50vw; background: rgba(0, 0, 0, 0.5); padding: 10px;">
+        This is Tarun Kondapalli. I love coding for the front-end where I can see the things I code. I have a Masters in Electrical Engineering from Northern Illinois University. I believe my hardwork and willingness to learn can take me places.
+      </p>
+    </div>
+  </div>
+  <div>
+    <div class="img tech">
+      <p perfect-parallax parallax-ratio="1.0" parallax-css="bottom" parallax-init-val="-1050" class="txt">
+        What I do
+        <p perfect-parallax parallax-ratio="1.0" parallax-css="bottom" parallax-init-val="-1400" class="txt" style="font-size: 35px; width: 50vw; background: rgba(0, 0, 0, 0.5); padding: 10px;">
+          I like building rich UI/UX for users. The technologies I use include but not limited to HTML5, CSS3, AngularJS & JQuery. 
+        </p>
+      </p>
+    </div>
+  </div>
+  <div>
+    <div class="img people">
+      <p perfect-parallax parallax-ratio="1.0" parallax-css="bottom" parallax-init-val="-1850" class="txt">
+        Contact Me
+        <p perfect-parallax parallax-ratio="1.0" parallax-css="bottom" parallax-init-val="-2150" class="txt" style="font-size: 35px; width: 50vw; background: rgba(0, 0, 0, 0.5); padding: 10px;">
+          <span>
+            <a style="color: white; text-decoration: none;" href="mailto:tarunkondapalli@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> tarunkondapalli@gmail.com </a><br />
+            <a style="color: white; text-decoration: none;" href="http://facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i> facebook.com/tk </a><br />
+            <a style="color: white; text-decoration: none;" href="http://github.com/tarunktk"><i class="fa fa-github-alt" aria-hidden="true"></i> github.com/tarunktk<br /></a>
+          </span>
+        </p>
+      </p>
+    </div>
+  </div>
+  <script src="../bower_components/angular/angular.min.js"></script>
+  <script src="../angular-perfect-parallax.js"></script>
+</body>
+</html>
